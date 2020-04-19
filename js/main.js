@@ -18,8 +18,12 @@ function clear() {
 
 function calculate() {
     var n = parseInt(inputselect.val());
-    table = $('<table>');
-
+    var table = $('<table>');
+    var colgroup = $('<colgroup>');
+    table.append( colgroup );
+    for(var i = 0; i <= n+1; i++){
+        colgroup.append($('<col>').attr('width','50px'));
+    }
     for (var k = 0; k <= n; k++) {
         var row = $('<tr>');
         table.append(row);

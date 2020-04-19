@@ -267,11 +267,12 @@ textarea {
 table {
   border-collapse: collapse;
   text-align: center;
+  table-layout: fixed;
+  width: 100%;
 }
 
 table tr td {
   border : 1px solid black;
-  padding: 10px;
 }
 
 .td-rk {
@@ -288,19 +289,4 @@ table tr td {
 .td-k-first {
   background-color: burlywood;
 
-}
-.diagonalline{
-  border:1px solid gray;
-  width:28px;
-  height:28px;
-  position:relative;
-}
-
-.diagonalline:after{
-  content:"";
-  position:absolute;
-  border-top:1px solid red;
-  width:40px;
-  transform: rotate(45deg);
-  transform-origin: 0% 0%;
 }
