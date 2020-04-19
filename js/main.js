@@ -36,7 +36,7 @@ function calculate() {
             }
             else {
                 // 2^r(n*(2^(n-k) + 1 ))
-                answer = Math.pow(2, r) * (n * (Math.pow(2, n - k) + 1));
+                answer = Math.pow(2, r) * (n * (Math.pow(2, n - k) ) + 1);
             }
             td.html(answer)
         }
