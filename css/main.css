@@ -277,3 +277,30 @@ table tr td {
 .td-rk {
   background-color: lightblue;
 }
+.td-r {
+  background-color: cyan;
+}
+
+.td-k {
+  background-color: aquamarine;
+}
+
+.td-k-first {
+  background-color: burlywood;
+
+}
+.diagonalline{
+  border:1px solid gray;
+  width:28px;
+  height:28px;
+  position:relative;
+}
+
+.diagonalline:after{
+  content:"";
+  position:absolute;
+  border-top:1px solid red;
+  width:40px;
+  transform: rotate(45deg);
+  transform-origin: 0% 0%;
+}
